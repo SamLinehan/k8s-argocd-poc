@@ -14,7 +14,7 @@ spec:
         app: dotnet-webapi
     spec:
       containers:
-      - image: https://hub.docker.com/r/slinehantribalscale/dotnet-argocd-poc
+      - image: slinehantribalscale/dotnet-argocd-poc
         name: dotnet-webapi
         ports:
         - containerPort: 80
