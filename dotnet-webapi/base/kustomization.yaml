@@ -1,0 +1,6 @@
+commonLabels:
+  app: dotnet-webapi
+
+resources:
+- dotnet-webapi-deployment.yaml
+- dotnet-webapi-service.yaml

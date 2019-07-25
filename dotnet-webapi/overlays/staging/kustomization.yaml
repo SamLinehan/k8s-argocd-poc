@@ -1,0 +1,14 @@
+namePrefix: staging-
+commonLabels:
+  org: myOrg
+  variant: staging
+commonAnnotations:
+  note: Hello, I am staging!
+resources:
+- ../../base
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+images:
+- name: dotnet-webapi
+  newName: dotnet-webapi
+  newTag: 1.0.staging
