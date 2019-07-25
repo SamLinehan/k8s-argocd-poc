@@ -5,4 +5,4 @@ commonLabels:
 commonAnnotations:
   note: Hello, I am production!
 resources:
-- ../../base/
+- ../../base
