@@ -1,0 +1,20 @@
+apiVersion: apps/v1beta2
+kind: Deployment
+metadata:
+  name: dotnet-webapi
+spec:
+  replicas: 1
+  revisionHistoryLimit: 3
+  selector:
+    matchLabels:
+      app: dotnet-webapi
+  template:
+    metadata:
+      labels:
+        app: dotnet-webapi
+    spec:
+      containers:
+      - image: https://hub.docker.com/r/slinehantribalscale/dotnet-argocd-poc
+        name: dotnet-webapi
+        ports:
+        - containerPort: 80
