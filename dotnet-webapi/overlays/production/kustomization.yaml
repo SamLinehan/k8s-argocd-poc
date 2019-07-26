@@ -6,5 +6,5 @@ commonLabels:
   org: myOrg
 commonAnnotations:
   note: Hello, I am production!
-resources:
+bases:
 - ../../base

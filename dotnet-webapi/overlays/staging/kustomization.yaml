@@ -6,7 +6,7 @@ commonLabels:
   variant: staging
 commonAnnotations:
   note: Hello, I am staging!
-resources:
+bases:
 - ../../base
 images:
 - name: dotnet-webapi
