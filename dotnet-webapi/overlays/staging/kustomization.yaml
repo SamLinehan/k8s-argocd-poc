@@ -6,9 +6,9 @@ commonLabels:
   variant: staging
 commonAnnotations:
   note: Hello, I am staging!
+images:
+- name: slinehantribalscale/dotnet-argocd-poc
+  newName: slinehantribalscale/dotnet-argocd-poc
+  newTag: 1.0.staging
 bases:
 - ../../base
-images:
-- name: dotnet-webapi
-  newName: dotnet-webapi
-  newTag: 1.0.staging
