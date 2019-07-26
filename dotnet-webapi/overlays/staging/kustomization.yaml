@@ -9,6 +9,6 @@ commonAnnotations:
 images:
 - name: slinehantribalscale/dotnet-argocd-poc
   newName: slinehantribalscale/dotnet-argocd-poc
-  newTag: 1.0.staging
+  newTag: v1.1.staging
 bases:
 - ../../base
