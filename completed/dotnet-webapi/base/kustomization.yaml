@@ -1,0 +1,8 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+commonLabels:
+  app: dotnet-webapi
+
+resources:
+- dotnet-webapi-deployment.yaml
+- dotnet-webapi-svc.yaml

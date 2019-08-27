@@ -1,0 +1,14 @@
+kind: Kustomization
+apiVersion: kustomize.config.k8s.io/v1beta1
+namePrefix: staging-
+commonLabels:
+  org: myOrg
+  variant: staging
+commonAnnotations:
+  note: Hello, I am staging!
+images:
+- name: slinehantribalscale/dotnet-argocd-poc
+  newName: slinehantribalscale/dotnet-argocd-poc
+  newTag: v1.1.staging
+bases:
+- ../../base
